@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card List</title>
+    <style>
+        /* Your CSS Styles */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #11c4a4, #415592);
+            
+            justify-content: center;
+            align-items: center;
+
+            
+            flex-direction: column;
+            
+        }
+
+        .header {
+            
+            justify-content: center;
+            align-items: center;
+            
+            padding-bottom: 7px;
+
+            height: 25px;
+            background-color: #4caf50;
+            margin-bottom: -15px;
+
+            margin-top: 10px;
+            display: flex;
+            
+        }
+
+
+        h2 {
+            color: #fff;
+            font-size: 28px;
+            
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .card {
+            max-height: fit-content;
+            margin: 2vw auto;
+            width: 95%;
+            height: 85%;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 1px;
+            overflow: hidden;
+            
+            padding: 50px;
+    
+        }
+
+
+        .card-content {
+
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card-content button {
+            background: linear-gradient(45deg, #11c4a4, #415592);
+            color: #fff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+             background: linear-gradient(45deg, #415592, #11c4a4);
+        }
+
+        .button {
+            border-bottom: 0;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            border: none;
+            color: #ffffff;
+            font-size: 18px;
+            box-shadow: 0 5px 15px 0 rgba(136, 142, 191, 1);
+            transition: 0.5s;
+        }
+
+        .button:hover {
+            transform: translate(0,-3px);
+            box-shadow: 0 20px 40px 0 rgba(136, 142, 191, 1);
+        }
+
+        .button i {
+            margin-right: 5px;
+        }
+
+        a {
+            border-bottom: 0px;
+            text-decoration: none;
+        }
+
+        * {box-sizing: border-box;}
+
+        body { 
+          margin: 0;
+          font-family: Arial, sans-serif;
+        }
+
+        header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          background-color: #1ed5b9;
+          padding: 2px 10px;
+        }
+
+        .wrap-logo {
+          display: flex;
+          align-items: center;
+         
+        }
+
+        header a {
+          color: #fff;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px; 
+          border-radius: 4px;
+        }
+
+        header a.logo {
+          font-size: 25px;
+          font-weight: bold;
+        }
+
+        header a:hover {
+          background: linear-gradient(45deg, #11c4a4, #415592);
+          color: #fff;
+        }
+
+        header a.active {
+          background: linear-gradient(45deg, #11c4a4, #415592);
+        }
+
+        nav {
+          display: flex;
+          align-items: center;
+          }
+
+    </style>
+</head>
+<body>
+     <header>
+      <div class="wrap-logo">
+      <a href="#logo" class="logo">H A V A L</a>
+      </div>
+      <nav>
+        <a href="/tur">Басты бет</a>
+        <a class="active" href="/list">Қосымша ақпарат</a>
+        <a href="/login">Шығу</a>
+      </nav>
+    </header>
+    
+    <div class="card">
+        
+        <div class="card-content">
+            <form method="get" action="static/m6.pdf">
+                <h2>HAVAL M6</h2>
+                <p>Автокөліктің экстерьері әрдайым өзекті болатын сапа мен ұстамдылықты ұқыпты пайдаланады.</p>
+                <button type="submit">Download!</button>
+            </form>
+        </div>
+    </div>
+    <div class="card">
+        
+        <div class="card-content">
+            <form method="get" action="static/h6.pdf">
+                <h2>HAVAL H6</h2>
+                <p>HAVAL H6 моделінің үшінші буынында «Шығыс футуризмі» дизайнерлік концепциясы іске асырылған, оның аясында жарқын агрессивті бейненің орнына сүйкімді әрі сырбаз бейне қалыптасқан.</p>
+                <button type="submit">Download!</button>
+            </form>
+        </div>
+    </div>
+    <div class="card">
+        
+        <div class="card-content">
+            <form method="get" action="static/dargo.pdf">
+                <h2>HAVAL DARGO</h2>
+                <p>Металлик әсері бар шанақтың стильді түстері HAVAL DARGO көлігінің жарқын дизайнын айшықтап тұрады.</p>
+                <button type="submit">Download!</button>
+            </form>
+        </div>
+    </div>
+    <!-- Add more cards as needed -->
+</body>
+</html>

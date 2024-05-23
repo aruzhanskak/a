@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>тур</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #11c4a4, #415592);
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+
+        .card {
+            display: flex;
+            margin: 2vw auto;
+            width: 95%;
+            height: 85%;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            left: 500px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        .card iframe {
+            width: 99%;
+            height: 99%;
+        }
+
+        * {box-sizing: border-box;}
+
+        body { 
+          margin: 0;
+          font-family: Arial, sans-serif;
+        }
+
+        header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          background-color: #1ed5b9;
+          padding: 2px 10px;
+        }
+
+        .wrap-logo {
+          display: flex;
+          align-items: center;
+         
+        }
+
+        header a {
+          color: #fff;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px; 
+          border-radius: 4px;
+        }
+
+        header a.logo {
+          font-size: 25px;
+          font-weight: bold;
+        }
+
+        header a:hover {
+          background: linear-gradient(45deg, #11c4a4, #415592);
+          color: #fff;
+        }
+
+        header a.active {
+          background: linear-gradient(45deg, #11c4a4, #415592);
+        }
+
+        nav {
+          display: flex;
+          align-items: center;
+          }
+
+    </style>
+</head>
+<body>
+    <header>
+      <div class="wrap-logo">
+      <a href="#logo" class="logo">H A V A L</a>
+      </div>
+      <nav>
+        <a class="active" href="/tur">Басты бет</a>
+        <a href="/list">Қосымша ақпарат</a>
+        <a href="/login">Шығу</a>
+      </nav>
+    </header>
+
+    <div class="card">
+        <iframe src="static/tur/output/index.html" width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</body>
+</html>
